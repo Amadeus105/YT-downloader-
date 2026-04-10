@@ -25,7 +25,7 @@ async def download_video(req: DownloadRequest):
         raise HTTPException(status_code=400, detail="URL is required")
 
     ydl_opts = {
-        'outtmpl': r'D:\Aidyn\Python\YouTube downloader\Videos\%(title)s.%(ext)s',
+        'outtmpl': r'D:\"Write here path"\Python\YouTube downloader\Videos\%(title)s.%(ext)s',
         'ffmpeg_location': r'C:\ffmpeg\bin',
         'noplaylist': True,
     }
